@@ -17,6 +17,11 @@
 ;      0 "(empty)"
 ;      comment)))
 
+(defn get-album
+  "Get the album of the song (as MPDAlbum.toString())."
+  [song]
+  (str (.getAlbum song)))
+
 (defn get-artist
   "Get artist of the song (as MPDArist.toString())."
   [song]
@@ -27,10 +32,30 @@
   [song]
   (.getComment song))
 
+(defn get-disc-number
+  "Get the disc number."
+  [song]
+  (.getDiscNumber song))
+
 (defn get-length
-  "Get the length of the song (in seconds)"
+  "Get the length of the song (in seconds)."
   [song]
   (.getLength song))
+
+(defn get-file
+  "Get the path of the song (as String)."
+  [song]
+  (.getFile song))
+
+(defn get-genre
+  "Get the genre of the song."
+  [song]
+  (.getGenre song))
+
+(defn get-id
+  "Get the song's ID in the playlist."
+  [song]
+  (.getId song))
 
 (defn get-title
   "Get the song title."

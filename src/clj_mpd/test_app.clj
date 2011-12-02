@@ -17,6 +17,8 @@
     (print "Current song: ")
     (-> (setup-mpd) player/create-player player/get-current-song song/get-artist (print "- "))
     (-> (setup-mpd) player/create-player player/get-current-song song/get-title println)
+    (print "From the album: ")
+    (-> (setup-mpd) player/create-player player/get-current-song song/get-album println)
     (print "Time played: ")
     (-> (setup-mpd) player/create-player player/get-elapsed-time utils/format-seconds (print "/ "))
     (-> (setup-mpd) player/create-player player/get-current-song song/get-length utils/format-seconds println)))

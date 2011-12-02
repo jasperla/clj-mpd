@@ -31,7 +31,7 @@ MPD	 	- clj-mpd.core
 MPDAdmin	- clj-mpd.admin
 MPDCommand
 MPDDatabase	- clj-mpd.database
-MPDFile
+MPDFile		- clj-mpd.file
 MPDOutput
 MPDPlayer	- clj-mpd.player
 MPDPlaylist	- clj-mpd.playlist
