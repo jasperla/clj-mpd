@@ -27,6 +27,11 @@
   [song]
   (.getComment song))
 
+(defn get-length
+  "Get the length of the song (in seconds)"
+  [song]
+  (.getLength song))
+
 (defn get-title
   "Get the song title."
   [song]
