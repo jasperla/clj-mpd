@@ -7,10 +7,15 @@ extra helper functions and other functionality.
 
 ## ToDo
 
-Evertying.
+Evertying, which includes:
+* Implement "useful" methods from javampd.
+* Fix NULL derefs when MPD isn't running/playing.
+* Proper way to setup a connection and use it throughout
+  clj-mpd.test_app, instead re-creating MPD/MPDPlayer all the time.
 
-### Classes to implement
+### To implement:
 
+<pre>
 MPDAudioInfo
 MPDItem
 	MPDAlbum
@@ -18,9 +23,10 @@ MPDItem
 	MPDGenre
 	MPDSavedPlaylist
 	MPDSong
+</pre>
 
-### Classes to implement
-
+Implemented in:
+<pre>
 MPD	 	- clj-mpd.core
 MPDAdmin	- clj-mpd.admin
 MPDCommand
@@ -29,6 +35,7 @@ MPDFile
 MPDOutput
 MPDPlayer	- clj-mpd.player
 MPDPlaylist	- clj-mpd.playlist
+</pre>
 
 ## Usage
 
