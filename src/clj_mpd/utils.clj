@@ -13,8 +13,4 @@
 (defn format-seconds
   "Takes a number of seconds, returns a String like \"1:40\"."
   [s]
-  (let [minutes (quot s 60)
-        seconds (mod s 60)]
-    (if (< seconds 10)
-      (str minutes ":0" seconds)
-      (str minutes ":" seconds))))
+  (format "%d:%02d" (quot s 60) (mod s 60)))

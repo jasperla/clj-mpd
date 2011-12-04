@@ -41,6 +41,13 @@ MPDPlaylist	- clj-mpd.playlist
 
 Don't use it yet (partly because there is nothing to use..)
 
+If you do, use 'lein run':
+gurthang:clj-mpd {1570} lein run
+Current song: Deadmau5 - Dance Department
+From the album: Dance Department (21-05-2011)
+Time played: 20:41 / 57:37
+gurthang:clj-mpd {1571} 
+
 ## License
 
 Copyright (C) 2011 Jasper Lievisse Adriaanse <jasper@humppa.nl>
