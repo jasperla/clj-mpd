@@ -11,6 +11,10 @@
   clj-mpd.core
   (:import (org.bff.javampd/MPD)))
 
+(def create-mpd
+  (fn [hostname port]
+    (org.bff.javampd.MPD. hostname (Integer/parseInt port))))
+
 (defn ^{:doc "Setup a connection to MPD (defaults to localhost:6600)" }
   init-mpd [& {:keys [hostname port], :or {hostname "localhost", port "6600"}}]
-  (org.bff.javampd.MPD. hostname (Integer/parseInt port)))
+  (create-mpd hostname port))
