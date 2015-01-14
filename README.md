@@ -1,3 +1,5 @@
+**This repository has moved to [clj-mpd/clj-mpd](https://github.com/clj-mpd/clj-mpd), please update your refs.**
+
 # clj-mpd
 
 Clojure library wrapping the javampd [1] library along with several
